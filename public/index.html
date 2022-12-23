@@ -669,6 +669,11 @@
 
     // Navbar
     let navCollapse = false
+    if(screen.width <= 1023) {
+      document.querySelector("#navbar").classList.add("hidden");
+    }
+
+    // handle screen onresize
     window.onresize=function()
     {
         if(window.innerWidth <= 1023) {
