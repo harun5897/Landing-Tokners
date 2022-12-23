@@ -1547,6 +1547,10 @@ video {
     padding-bottom: 5rem;
   }
 
+  .lg\:pt-20 {
+    padding-top: 5rem;
+  }
+
   .lg\:text-right {
     text-align: right;
   }
