@@ -9,30 +9,685 @@
   <title>Tokners</title>
 </head>
 <body style="background-color: #0F1320;">
-  <div class="banner flex min-[1601px]:justify-center min-[1160px]:justify-end">
-    <div class="relative w-[1280px]">
-      <div class="absolute md:mt-64 mt-20 z-10 xl:ml-0 ml-5">
-        <span class="text-sm font-bold" style="color: #00B4EC;">At Tokners we are</span>
-        <div class="text-4xl text-white font-bold mt-3">
-          <h3>Reimagining social</h3>
-          <h3>media through the</h3>
-          <h3>power of the blockchain.</h3>
-        </div>
-        <div class="text-xs sm:w-96 w-80 font-thin mt-5 leading-5" style="color: #d1d5e9;">
-          <p>We are creating social media 3.0 with influencers, celebrities and creators being able to launch their own digital currency by simply creating a profile with media content posted as Non fungible Tokens that can be owned and traded on the Tknrs network</p>
-        </div>
-        
-        <button class="rounded-full px-6 py-2 mt-5 text-white" style="background-color: #22A75D;">Learn More</button>
+  <div>
+    <nav class="flex items-center justify-between flex-wrap p-6">
+      <div class="flex items-center flex-no-shrink text-white mr-6">
+        <img
+          class="w-14 lg:ml-8 ml-0"
+          src="./image/navbar-logo.svg" 
+          alt=""
+        >
+        <h3 class="text-2xl font-bold text-white ml-1">Tokners</h3>
       </div>
-      <div class="md:mt-0 mt-80">
-        <div class="absolute right-0  flex justify-end mt-40">
-          <img class="md:w-2/3 w-full" src="./image/banner-background.svg" alt="">
+      <div class="block lg:hidden">
+        <button 
+          onclick="toggle()" 
+          class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white">
+          <img src="./image/navbar-burger.svg" alt="">
+          <title>Menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        </button>
+      </div>
+      <div
+        id="navbar"
+        class="w-full flex-grow lg:flex lg:items-center lg:w-auto ml-8 lg:mt-0 mt-8">
+        <div class="lg:flex-grow text-white text-md">
+          <a 
+            href="#" 
+            class="no-underline block mt-4 lg:inline-block lg:mt-0 text-sm font-bold hover:text-white mr-4"
+          >
+            Our team
+          </a>
+          <a 
+            href="#" 
+            class="no-underline block mt-4 lg:inline-block lg:mt-0 text-sm font-bold hover:text-white mr-4"
+          >
+            Tokens
+          </a>
+          <a 
+            href="#" 
+            class="no-underline block mt-4 lg:inline-block lg:mt-0 text-sm font-bold hover:text-white mr-4"
+          >
+            Connect wallet
+          </a>
+          <a 
+            href="#" 
+            class="no-underline block mt-4 lg:inline-block lg:mt-0 text-sm font-bold hover:text-white"
+          >
+            Lightpaper
+          </a>
         </div>
-        <div class="absolute right-0 flex justify-end mt-16">
-          <img class="md:w-2/3 w-full" src="./image/banner-image.svg" alt="">
+        <div class="flex lg:flex-row flex-row-reverse justify-end lg:mt-0 mt-10 lg:mb-0 mb-5">
+          <button class="rounded-full px-6 py-2 text-white text-xs font-bold">Sign In</button>
+          <button class="rounded-full px-6 py-2 text-white text-xs font-bold shadow border-2 border-[#22A75D] ">Sign Up</button>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="flex 2xl:justify-center justify-end lg:mt-20">
+    <div class="w-[1280px]">
+      <section class="flex lg:flex-nowrap flex-wrap">
+        <div class="lg:w-1/2 md:w-9/12 w-full lg:pt-28 pt-5 xl:ml-0 ml-10 xl:mr-0 mr-2">
+          <span class="text-sm font-bold" style="color: #00B4EC;">At Tokners we are</span>
+          <div class="md:text-4xl text-3xl text-white font-bold mt-3">
+            <h3>Reimagining social media through the power of the blockchain.</h3>
+          </div>
+          <div class="text-xs font-thin mt-5 leading-5" style="color: #d1d5e9;">
+            <p>We are creating social media 3.0 with influencers, celebrities and creators being able to launch their own digital currency by simply creating a profile with media content posted as Non fungible Tokens that can be owned and traded on the Tknrs network</p>
+          </div>
+          <button class="rounded-full px-6 py-2 mt-5 text-white shadow" style="background-color: #22A75D;">Learn More</button>
+        </div>
+        <div class="relative flex justify-end">
+          <img class="w-full absolute -z-10" src="./image/banner-background.png" alt="">
+          <img class="w-full" src="./image/banner-image.png" alt="">
+        </div>
+      </section>
+
+      <section>
+        <div class="relative md:mt-44 mt-16">
+          <img class="-z-10 absolute w-3/5 -top-36 -left-32" src="./image/line-shape.png" alt="">
+          <div class="text-5xl text-white font-bold xl:ml-0 ml-10 lg:w-1/2 w-9/12">
+            <h3>We Make Designs that Lead and Inspire.</h3>
+          </div>
+          <div class="flex text-white justify-between">
+            <div class="lg:flex hidden flex-col justify-between mt-40 mb-7 xl:ml-0 ml-10">
+              <div class="relative">
+                <div class="absolute z-10">
+                  <div class="flex">
+                    <img class="mr-10 mt-2" style="height: 3px;" src="../public/image/line.png" alt="">
+                    <span class="cursor-pointer" onclick="clickLanding(1)">2018</span>
+                    <img id="point-line-1" class="ml-16 w-20 mt-1 h-4" src="./image/point-line.png" alt="">
+                  </div>
+                </div>
+              </div> 
+              <div class="relative">
+                <div class="absolute z-10">
+                  <div class="flex">
+                    <img class="mr-10 mt-2" style="height: 3px;" src="../public/image/line.png" alt="">
+                    <span class="cursor-pointer" onclick="clickLanding(2)">2019</span>
+                    <img id="point-line-2" class="ml-16 w-20 mt-1 h-4" src="./image/point-line.png" alt="">
+                  </div>
+                </div>
+              </div> 
+              <div class="relative">
+                <div class="absolute z-10">
+                  <div class="flex">
+                    <img class="mr-10 mt-2" style="height: 3px;" src="../public/image/line.png" alt="">
+                    <span class="cursor-pointer" onclick="clickLanding(3)">2020</span>
+                    <img id="point-line-3" class="ml-16 w-20 mt-1 h-4" src="./image/point-line.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="relative">
+                <div class="absolute z-10">
+                  <div class="flex">
+                    <img class="mr-10 mt-2" style="height: 3px;" src="../public/image/line.png" alt="">
+                    <span class="cursor-pointer" onclick="clickLanding(4)">2022</span>
+                    <img id="point-line-4" class="ml-16 w-20 mt-1 h-4" src="./image/point-line.png" alt="">
+                  </div>
+                </div>
+              </div> 
+              <div class="relative">
+                <div class="absolute z-10">
+                  <div class="flex">
+                    <img class="mr-10 mt-2" style="height: 3px;" src="../public/image/line.png" alt="">
+                    <span class="cursor-pointer" onclick="clickLanding(5)">2023</span>
+                    <img id="point-line-5" class="ml-16 w-20 mt-1 h-4" src="./image/point-line.png" alt="">
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <div class="flex justify-end relative">
+              <img id="content-1" class="lg:w-[85%] w-full" src="./image/content-1-background.png" alt="">
+              <img id="content-2" class="lg:w-[85%] w-full" src="./image/content-2-background.png" alt="">
+              <img id="content-3" class="lg:w-[85%] w-full" src="./image/content-3-background.png" alt="">
+              <img id="content-4" class="lg:w-[85%] w-full" src="./image/content-4-background.png" alt="">
+              <img id="content-5" class="lg:w-[85%] w-full" src="./image/content-5-background.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <div class="flex justify-between w-full lg:flex-nowrap flex-wrap">
+            <div class=" pt-14">
+              <div class="md:border-l-4 border-0 text-white">
+                <h3 class="md:text-3xl text-2xl font-bold lg:ml-[50px] ml-10">Lorem ipsum dolor sit amet, <br class="lg:block hidden"> consectetur cing elit.</h3>
+              </div>
+              <div class="lg:ml-10 ml-0">
+                <p class="text-sm font-thin mt-8 lg:ml-[18px] ml-10" style="color: #d1d5e9; max-width: 330px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porta sodales leo ibulum. Nullam vel posuere nisi. Donec in lobortis arcu.</p>
+                <button class="rounded-full px-6 py-2 text-black shadow mt-8 font-bold lg:ml-[18px] ml-10" style="background-color: #FFD100;">Contact Us</button>
+              </div>
+            </div>
+            <div class="lg:mt-0 mt-10">
+              <img class="lg:w-4/5 w-full" src="../public/image/number.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="mt-10 mb-10">
+          <div class="lg:flex xl:ml-0 ml-7 xl:mr-0 mr-7 lg:justify-center xl:justify-start 2xl:justify-center">
+            <div class="rounded-[1.5rem] px-10 py-7 lg:w-[46%] w-full lg:mb-14 mb-3" style="background-color: #171B29;">
+              <div class="h-[60px] w-[60px] rounded-full flex justify-center" style="background-color: #22A75D;">
+                <img class="self-center" src="./image/crown-icon.svg" alt="">
+              </div>
+              <h3 class="text-white text-2xl font-bold my-5">For <span class="underline" style="color: #22A75D;">Creators</span></h3>
+              <p class="font-thin text-xs leading-5" style="color: #d1d5e9;">Creators can gain independence through a decentralised digital currency system that is dependent on growing and engaging with the community and also their star power. They own 10-15% of the total value of the tokens minted.</p>
+              <div class="flex mt-6 cursor-pointer">
+                <span class="font-bold underline mr-2 text-sm" style="color: #22A75D;">Learn More</span>
+                <img src="../public/image/arrow-right.svg" alt="">
+              </div>
+            </div>
+            <div class="rounded-[1.5rem] px-10 py-7 lg:ml-4 lg:w-[45%] w-full lg:mt-14 mt-3" style="background-color: #171B29;">
+              <div class="h-[60px] w-[60px] rounded-full flex justify-center" style="background-color: #2278D4;">
+                <img class="self-center" src="./image/star-icon.svg" alt="">
+              </div>
+              <h3 class="text-white text-2xl font-bold my-5">For <span class="underline" style="color: #2278D4;">Holders</span></h3>
+              <p class="font-thin text-xs leading-5" style="color: #d1d5e9;">Holding social tokens allows the individual to gain access to benefits including unreleased content, private communities, direct access to celebrity, early- access to tickets and more as well as the ability to trade with other communities in order to gain access to more creator content with early token buyers being the biggest winners as the value of the token increases with more buyers. </p>
+              <div class="flex mt-3 cursor-pointer">
+                <span class="font-bold underline mr-2 text-sm" style="color: #2278D4;">Learn More</span>
+                <img src="../public/image/arrow-right-blue.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="flex 2xl:justify-center justify-end">
+    <div class="w-[1380px] bg-white">
+      <div class="min-[1100px]:flex bg-[#0F1320]">
+        <div class="xl:w-[50%]">
+          <img class="min-[1100px]:block hidden h-full" src="../public/image/layer-1-section.png" alt="">
+          <img class="min-[1100px]:hidden block w-full md:h-[40vh] h-[30vh]" src="../public/image/layer-1-section-mobile.png" alt="">
+        </div>
+        <div class="xl:w-[50%] w-full bg-white lg:rounded-tl-[45%] rounded-tl-[0px] lg:rounded-tr-[0px] rounded-tr-[200px] xl:pl-24 pl-6 xl:pt-48 pt-24">
+          <div class="text-[#0F1320] w-[85%] xl:pb-0 pb-16">
+            <h3 class="text-3xl font-bold"> What makes us different? </h3>
+            <p class="text-sm font-bold mt-5">We would only launch tokens with the express permission of the creators.</p>
+            <p class="text-sm mt-5">There are several thousand celebrities and creators on twitter, tiktok, Instagram and YouTube with followings in the millions who we would be actively engaging before we go viral. 
+              <br>
+              <br>
+              We would get them on our
+              platform and they would see the opportunity to create a fan driven digital economy where their digital content can be traded as NFTs and their most loyal fans can have the monetary value of their creator's currency increase significantly as they promote their digital currency across their channels while our native token holders benefit from the Weentar popularity.</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#0F1320] md:rounded-tr-[200px] rounded-tr-none">
+        <div class="md:pt-32 pb-16">
+          <div class="flex flex-wrap lg:justify-center justify-start lg:pl-0 pl-5">
+            <div class="content w-[300px] pl-5 pt-10">
+              <div class="flex">
+                <div class="h-[60px] w-[60px] rounded-bl-lg rounded-t-full rounded-br-full flex justify-center bg-[#22A75D]">
+                  <span class="font-bold text-xl self-center">Q1</span>
+                </div>
+                <div class=" pt-8 pl-3">
+                  <div class="h-[10px] w-[10px] rounded-full bg-[#22A75D]"></div>
+                  <div class="text-white font-bold pt-2">2021</div>
+                </div>
+              </div>
+              <div class="content-item pt-7">
+                <div class="item flex text-xs">
+                  <div>
+                    <span class="text-[#22A75D] font-semibold">01</span>
+                  </div>
+                  <div class="pl-5">
+                    <span class="text-[#d1d5e9] font-thin">Team set-up</span>
+                  </div>
+                </div>
+                <div class="item flex text-xs pt-2">
+                  <div>
+                    <span class="text-[#22A75D] font-semibold">02</span>
+                  </div>
+                  <div class="pl-5">
+                    <span class="text-[#d1d5e9] font-thin">Launch of informational website</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content w-[300px] pl-5 pt-10">
+              <div class="flex">
+                <div class="h-[60px] w-[60px] rounded-bl-lg rounded-t-full rounded-br-full flex justify-center bg-[#2278D4]">
+                  <span class="font-bold text-xl self-center">Q2</span>
+                </div>
+                <div class=" pt-8 pl-3">
+                  <div class="h-[10px] w-[10px] rounded-full bg-[#2278D4]"></div>
+                  <div class="text-white font-bold pt-2">2021</div>
+                </div>
+              </div>
+              <div class="content-item pt-7">
+                <div class="item flex text-xs">
+                  <div>
+                    <span class="text-[#2278D4] font-semibold">01</span>
+                  </div>
+                  <div class="pl-5">
+                    <span class="text-[#d1d5e9] font-thin">Presale and exchange listings</span>
+                  </div>
+                </div>
+                <div class="item flex text-xs pt-2">
+                  <div>
+                    <span class="text-[#2278D4] font-semibold">02</span>
+                  </div>
+                  <div class="pl-5">
+                    <span class="text-[#d1d5e9] font-thin">Blockchain development and launch</span>
+                  </div>
+                </div>
+                <div class="item flex text-xs pt-2">
+                  <div>
+                  <span class="text-[#2278D4] font-semibold">03</span>
+                  </div>
+                  <div class="pl-5">
+                    <span class="text-[#d1d5e9] font-thin">Launch of our MVP</span>
+                  </div>
+                </div>
+                <div class="item flex text-xs pt-2">
+                  <div>
+                    <span class="text-[#2278D4] font-semibold">04</span>
+                  </div>
+                  <div class="pl-5">
+                    <span class="text-[#d1d5e9] font-thin">Influencer agency partnerships</span>
+                  </div>
+                </div>
+                <div class="item flex text-xs pt-2">
+                  <div>
+                    <span class="text-[#2278D4] font-semibold">05</span>
+                  </div>
+                  <div class="pl-5">
+                    <span class="text-[#d1d5e9] font-thin">Marketing and promotion </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content w-[300px] pl-5 pt-10">
+              <div class="flex">
+                <div class="h-[60px] w-[60px] rounded-bl-lg rounded-t-full rounded-br-full flex justify-center bg-[#FFD100]">
+                  <span class="font-bold text-xl self-center">Q3</span>
+                </div>
+                <div class=" pt-8 pl-3">
+                  <div class="h-[10px] w-[10px] rounded-full bg-[#FFD100]"></div>
+                  <div class="text-white font-bold pt-2">2021</div>
+                </div>
+              </div>
+              <div class="content-item pt-7">
+                <div class="item flex text-xs">
+                  <div>
+                    <span class="text-[#FFD100] font-semibold">01</span>
+                  </div>
+                  <div class="pl-5">
+                    <span class="text-[#d1d5e9] font-thin">Celebrity, Creator and Influencer partnerships</span>
+                  </div>
+                </div>
+                <div class="item flex text-xs pt-2">
+                  <div>
+                    <span class="text-[#FFD100] font-semibold ">02</span>
+                  </div>
+                  <div class="pl-5">
+                    <span class="text-[#d1d5e9] font-thin">Expansion of creator communities on our platform</span>
+                  </div>
+                </div>
+                <div class="item flex text-xs pt-2">
+                  <div>
+                    <span class="text-[#FFD100] font-semibold">03</span>
+                  </div>
+                  <div class="pl-5">
+                    <span class="text-[#d1d5e9] font-thin">More Marketing and promotion</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content w-[300px] pl-5 pt-10">
+              <div class="flex">
+                <div class="h-[60px] w-[60px] rounded-bl-lg rounded-t-full rounded-br-full flex justify-center bg-[#E20613]">
+                  <span class="font-bold text-xl self-center">Q4</span>
+                </div>
+                <div class=" pt-8 pl-3">
+                  <div class="h-[10px] w-[10px] rounded-full bg-[#E20613]"></div>
+                  <div class="text-white font-bold pt-2">2021</div>
+                </div>
+              </div>
+              <div class="content-item pt-7">
+                <div class="item flex text-xs">
+                  <div>
+                    <span class="text-[#E20613] font-semibold">01</span>
+                  </div>
+                  <div class="pl-5">
+                    <span class="text-[#d1d5e9] font-thin">Mainstream partnerships</span>
+                  </div>
+                </div>
+                <div class="item flex text-xs pt-2">
+                  <div>
+                    <span class="text-[#E20613] font-semibold">02</span>
+                  </div>
+                  <div class="pl-5">
+                    <span class="text-[#d1d5e9] font-thin">500 active creator communities</span>
+                  </div>
+                </div>
+                <div class="item flex text-xs pt-2">
+                  <div>
+                    <span class="text-[#E20613] font-semibold">03</span>
+                  </div>
+                  <div class="pl-5">
+                    <span class="text-[#d1d5e9] font-thin">2Million active community members</span>
+                  </div>
+                </div>
+                <div class="item flex text-xs pt-2">
+                  <div>
+                    <span class="text-[#E20613] font-semibold">04</span>
+                  </div>
+                  <div class="pl-5">
+                    <span class="text-[#d1d5e9] font-thin">More Marketing and promotion</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:pt-44 pt-20 flex justify-center">
+            <div class="w-full">
+              <div class="md:hidden block lg:h-auto h-[450px] bg-[#171B29] rounded-[30px] relative mb-14 mr-5 ml-14">
+                <img class="absolute lg:-left-14 -left-10 top-0 h-full" src="../public/image/Woman-Holding-iPhone.png" alt="">
+              </div>
+              <div class="lg:flex justify-between text-[#d1d5e9] lg:mx-24 mx-10">
+                <div class="lg:max-w-[600px] w-full lg:pr-20 pr-0">
+                  <div class="header md:flex">
+                    <img src="../public/image/logo-tokeners.svg" alt="">
+                    <h3 class="text-4xl font-bold md:pl-5 text-white md:pt-0 pt-3 md:pb-0 pb-5"> Tokner is coming</h3>
+                  </div>
+                  <div class="body pt-5">
+                    <div class="">
+                      <p class="text-xs font-bold leading-5">Cryptocurrency adoption is at less than 1% of the global world population with some countries and entities actively fighting against its mass adoption and the smartest developers and nerds holding the fort. </p>
+                      <p class="text-xs font-thin leading-5 mt-4">Bitcoin was the first, and it has since grown to thousands of tokens launched all aiming to fix one problem or the other with some quite simply FOMOing the moment. Our goal is to bring mass adoption to the cryptocurrency space by dumbing it down. How far down? So down that even a celebrity can explain it in simple words to their followers and have them download an app, buy into the social currency of their favourite person and watch their investment as is with other crypto currency project.
+                      </p>
+                      <div class="md:block hidden">
+                        <p class="text-xs font-thin leading-5 mt-4">
+                          We are trying to do to this space what investment apps did for the "nonexistent retail investors". We are gamefying digital currency, bringing in popular faces instead of hard to understand projects to make it the norm and inadvertently being the "gateway drug" for a lot of people to finally give this space a real look. 
+                        </p>
+                        <p class="text-xs font-bold leading-5 mt-4">A new digital economy is coming. People would be just as powerful as countries and creators would be paid beyond the peanuts that conventional social media platforms can offer.</p>
+                        <p class="text-xs font-thin leading-5 mt-4">There would be new markets and advertisers with little to offer would not find home there. Like Kanye said,</p>
+                        <div class="flex mt-4">
+                          <span class="text-lg text-[#FFD100]">"</span>
+                          <p class="text-xs font-bold leading-5 pl-3">"Personalities would become the new currency, and services would be built on top of them". </p>
+                        </div>
+                        <p class="text-xs font-thin leading-5 mt-4">Well, Kanye didn't exactly say that, but it sounds like something we hope he would say.</p>
+                        <p class="text-xs font-thin leading-5 mt-4"> Currency is digital, it has been that way for a while now, but this time there would be no dead presidents on the money, there would people like you on the money, and you would own it because it would make the most sense in the world.</p>
+                      </div>
+                      <button class="rounded-full px-6 py-2 mt-5 text-white shadow border-2 border-[#22A75D] ">Learn More</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-[600px] md:block hidden w-full lg:h-auto h-[450px] bg-[#171B29] rounded-[30px] relative pl-5 lg:mt-0 mt-16">
+                  <img class="absolute lg:-left-14 -left-10 top-0 h-full" src="../public/image/Woman-Holding-iPhone.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="h-[120vh] bg-[length:100%_120vh] flex lg:items-end items-center justify-center" style="background-image: url(../public/image/background-personal-detail.png);">
+            <div class="lg:flex hidden justify-center pb-24 relative">
+              <h3 class="absolute text-3xl font-bold text-center -top-10 text-white">Presale Details</h3>
+              <div class="bg-white text-[#191B21] py-10 px-24 rounded-[20px] ml-5 mb-12">
+                <div class="flex justify-center">
+                  <div class="h-[60px] w-[60px] rounded-bl-lg rounded-t-full rounded-br-full flex justify-center bg-[#22A75D]">
+                    <span class="font-bold text-xl self-center">Q1</span>
+                  </div>
+                </div>
+                <h3 class="text-2xl font-bold mt-10 text-center">Phase One</h3>
+                <p class="text-xs font-bold mt-2 text-center">0/04/2021 - 16/04/2021</p>
+                <p class="text-sm font-bold mt-10 text-center">1 BNB = 100000 WNTR</p>
+                <p class="text-xs font-thin mt-2 text-center">Soft cap: <span class="font-bold">5000 BNB</span></p>
+                <p class="text-xs font-thin mt-2 text-center"> Hard cap: <span class="font-bold">10000 BNB</span></p>
+              </div>
+              <div class="bg-white text-[#191B21] py-10 px-24 rounded-[20px] ml-5 mt-12">
+                <div class="flex justify-center">
+                  <div class="h-[60px] w-[60px] rounded-bl-lg rounded-t-full rounded-br-full flex justify-center bg-[#2278D4]">
+                    <span class="font-bold text-xl self-center">Q2</span>
+                  </div>
+                </div>
+                <h3 class="text-2xl font-bold mt-10 text-center">Phase Two</h3>
+                <p class="text-xs font-bold mt-2 text-center">0/04/2021 - 16/04/2021</p>
+                <p class="text-sm font-bold mt-10 text-center">1 BNB = 100000 WNTR</p>
+                <p class="text-xs font-thin mt-2 text-center">Soft cap: <span class="font-bold">5000 BNB</span></p>
+                <p class="text-xs font-thin mt-2 text-center"> Hard cap: <span class="font-bold">10000 BNB</span></p>
+              </div>
+              <div class="bg-white text-[#191B21] py-10 px-24 rounded-[20px] ml-5 mb-12">
+                <div class="flex justify-center">
+                  <div class="h-[60px] w-[60px] rounded-bl-lg rounded-t-full rounded-br-full flex justify-center bg-[#FFD100]">
+                    <span class="font-bold text-xl self-center">Q3</span>
+                  </div>
+                </div>
+                <h3 class="text-2xl font-bold mt-10 text-center">Phase There</h3>
+                <p class="text-xs font-bold mt-2 text-center">0/04/2021 - 16/04/2021</p>
+                <p class="text-sm font-bold mt-10 text-center">1 BNB = 100000 WNTR</p>
+                <p class="text-xs font-thin mt-2 text-center">Soft cap: <span class="font-bold">5000 BNB</span></p>
+                <p class="text-xs font-thin mt-2 text-center"> Hard cap: <span class="font-bold">10000 BNB</span></p>
+              </div>
+            </div>
+
+            <!-- RESPONSIVE NOT SLIDER -->
+            <div class="lg:hidden block">
+              <h3 class="text-3xl font-bold text-centertext-white text-center text-white">Presale Details</h3>
+              <div class="bg-white text-[#191B21] py-10 px-24 rounded-[20px] mt-7">
+                <div class="flex justify-center">
+                  <div class="h-[60px] w-[60px] rounded-bl-lg rounded-t-full rounded-br-full flex justify-center bg-[#22A75D]">
+                    <span class="font-bold text-xl self-center">Q1</span>
+                  </div>
+                </div>
+                <h3 class="text-2xl font-bold mt-10 text-center">Phase One</h3>
+                <p class="text-xs font-bold mt-2 text-center">0/04/2021 - 16/04/2021</p>
+                <p class="text-sm font-bold mt-10 text-center">1 BNB = 100000 WNTR</p>
+                <p class="text-xs font-thin mt-2 text-center">Soft cap: <span class="font-bold">5000 BNB</span></p>
+                <p class="text-xs font-thin mt-2 text-center"> Hard cap: <span class="font-bold">10000 BNB</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:flex justify-center lg:mx-24 mx-10 lg:pt-32 pt-0 relative">
+            <h3 class="lg:block hidden absolute text-3xl font-bold text-center top-10 text-white">How to buy</h3>
+            <div class="lg:hidden block mb-5">
+              <h3 class="text-3xl font-bold text-center text-white">How to buy</h3>
+            </div>
+            <div class="bg-[#171B29] text-white rounded-[20px] lg:mb-12 lg:w-[32%] w-full relative">
+              <div class="h-[60px] w-[60px] z-10 rounded-full lg:flex hidden justify-center bg-[#0F1320] absolute -right-10 top-24">
+                <img class="self-center" src="./image/right-green.svg" alt="">
+              </div>
+              <div class="head text-xs pl-7 pt-7">
+                01
+              </div>
+              <div class="body lg:px-20 px-7 lg:pb-20 pb-10 md:pt-10 pt-5">
+                <p class="text-sm font-bold">First Connect your Metamask or TrustWallet to the "Connect Wallet" on the Homepage.</p>
+              </div>
+              <div class="h-[60px] w-[60px] rounded-full md:hidden flex justify-center bg-[#0F1320] absolute -bottom-10 left-[40%] z-10">
+                <img class="self-center" src="./image/bottom-green.svg" alt="">
+              </div>
+            </div>
+            <div class="bg-[#171B29] text-white rounded-[20px] lg:mx-5 mx-0 lg:mt-12 lg:my-0 my-5 lg:w-[32%] w-full relative">
+              <div class="head text-xs pl-7 pt-7">
+                02
+              </div>
+              <div class="body lg:px-20 px-7 lg:pb-20 pb-10 md:pt-10 pt-5">
+                <p class="text-sm font-bold">Then send minimum of 0.1 BNB or maximum of 10 BNB to the Presale wallet</p>
+              </div>
+              <div class="h-[60px] w-[60px] rounded-full md:hidden flex justify-center bg-[#0F1320] absolute -bottom-10 left-[40%] z-10">
+                <img class="self-center" src="./image/bottom-yellow.svg" alt="">
+              </div>
+            </div>
+            <div class="bg-[#171B29] text-white rounded-[20px] mb-12 lg:w-[32%] w-full relative">
+              <div class="h-[60px] w-[60px] rounded-full lg:flex hidden justify-center bg-[#0F1320] absolute -left-10 top-24">
+                <img class="self-center" src="./image/right-yellow.svg" alt="">
+              </div>
+              <div class="head text-xs pl-7 pt-7">
+                03
+              </div>
+              <div class="body lg:px-20 px-7 lg:pb-20 pb-10 md:pt-10 pt-5">
+                <p class="text-sm font-bold">Then after you will received your $WNTR to your address within 24hours. </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOOTER -->
+          <div class="lg:flex hidden justify-center text-white mt-48 font-bold">
+            <a href="" class="underline">OUR TEAM</a>
+            <span class="px-16">/</span>
+            <a href="" class="underline">TOKENS</a>
+            <span class="px-16">/</span>
+            <a href="" class="underline">CONNECT WALLET</a>
+            <span class="px-16">/</span>
+            <a href="" class="underline">LIGHTPAPER</a>
+          </div>
+
+          <div class="text-white mt-36 font-bold">
+            <div class="lg:flex justify-between">
+              <div class="flex justify-center">
+                <img
+                  class="w-14 lg:ml-8 ml-0"
+                  src="./image/navbar-logo.svg" 
+                  alt=""
+                >
+                <h3 class="text-3xl font-bold text-white ml-1 self-center">Tokners</h3>
+              </div>
+              <div class="flex justify-center lg:mt-0 mt-10">
+                <div class="h-[60px] w-[60px] rounded-full flex justify-center border-2 mr-4 lg:ml-24">
+                  <img class="self-center" src="./image/twitter.svg" alt="">
+                </div>
+                <div class="h-[60px] w-[60px] rounded-full flex justify-center border-2 mr-4">
+                  <img class="self-center" src="./image/telegram.svg" alt="">
+                </div>
+                <div class="h-[60px] w-[60px] rounded-full flex justify-center border-2 mr-4">
+                  <img class="self-center" src="./image/instagram.svg" alt="">
+                </div>
+                <div class="h-[60px] w-[60px] rounded-full flex justify-center border-2 mr-4">
+                  <img class="self-center" src="./image/m.svg" alt="">
+                </div>
+                <div class="h-[60px] w-[60px] rounded-full flex justify-center border-2">
+                  <img class="self-center" src="./image/github.svg" alt="">
+                </div>
+              </div>
+              <div class="text-white lg:text-right text-center lg:mt-0 mt-9 lg:mr-0 mr-4">
+                <h2 class="text-base font-bold">© 2021 Tokners. All rights reserved.</h2>
+                <p class="text-sm font-thin mt-1">Design by Oleg Kulik</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <script>
+    document.querySelector("#content-1").style.display = 'block';
+    document.querySelector("#content-2").style.display = 'none';
+    document.querySelector("#content-3").style.display = 'none';
+    document.querySelector("#content-4").style.display = 'none';
+    document.querySelector("#content-5").style.display = 'none';
+
+    document.querySelector("#point-line-1").style.display = 'block';
+    document.querySelector("#point-line-2").style.display = 'none';
+    document.querySelector("#point-line-3").style.display = 'none';
+    document.querySelector("#point-line-4").style.display = 'none';
+    document.querySelector("#point-line-5").style.display = 'none';
+
+    function clickLanding(val) {
+      if(val == 1) {
+        document.querySelector("#content-2").style.display = 'none';
+        document.querySelector("#content-3").style.display = 'none';
+        document.querySelector("#content-4").style.display = 'none';
+        document.querySelector("#content-5").style.display = 'none';
+
+        document.querySelector("#point-line-2").style.display = 'none';
+        document.querySelector("#point-line-3").style.display = 'none';
+        document.querySelector("#point-line-4").style.display = 'none';
+        document.querySelector("#point-line-5").style.display = 'none';
+
+        document.querySelector("#content-1").style.display = 'block';
+        document.querySelector("#point-line-1").style.display = 'block';
+      }
+      if(val == 2) {
+        document.querySelector("#content-1").style.display = 'none';
+        document.querySelector("#content-3").style.display = 'none';
+        document.querySelector("#content-4").style.display = 'none';
+        document.querySelector("#content-5").style.display = 'none';
+
+        document.querySelector("#point-line-1").style.display = 'none';
+        document.querySelector("#point-line-3").style.display = 'none';
+        document.querySelector("#point-line-4").style.display = 'none';
+        document.querySelector("#point-line-5").style.display = 'none';
+
+        document.querySelector("#content-2").style.display = 'block';
+        document.querySelector("#point-line-2").style.display = 'block';
+
+      }
+      if(val == 3) {
+        document.querySelector("#content-1").style.display = 'none';
+        document.querySelector("#content-2").style.display = 'none';
+        document.querySelector("#content-4").style.display = 'none';
+        document.querySelector("#content-5").style.display = 'none';
+
+        document.querySelector("#point-line-1").style.display = 'none';
+        document.querySelector("#point-line-2").style.display = 'none';
+        document.querySelector("#point-line-4").style.display = 'none';
+        document.querySelector("#point-line-5").style.display = 'none';
+
+        document.querySelector("#content-3").style.display = 'block';
+        document.querySelector("#point-line-3").style.display = 'block';
+
+      }
+      if(val == 4) {
+        document.querySelector("#content-1").style.display = 'none';
+        document.querySelector("#content-2").style.display = 'none';
+        document.querySelector("#content-3").style.display = 'none';
+        document.querySelector("#content-5").style.display = 'none';
+
+        document.querySelector("#point-line-1").style.display = 'none';
+        document.querySelector("#point-line-2").style.display = 'none';
+        document.querySelector("#point-line-3").style.display = 'none';
+        document.querySelector("#point-line-5").style.display = 'none';
+
+        document.querySelector("#content-4").style.display = 'block';
+        document.querySelector("#point-line-4").style.display = 'block';
+
+      }
+      if(val == 5) {
+        document.querySelector("#content-1").style.display = 'none';
+        document.querySelector("#content-2").style.display = 'none';
+        document.querySelector("#content-3").style.display = 'none';
+        document.querySelector("#content-4").style.display = 'none';
+
+        document.querySelector("#point-line-1").style.display = 'none';
+        document.querySelector("#point-line-2").style.display = 'none';
+        document.querySelector("#point-line-3").style.display = 'none';
+        document.querySelector("#point-line-4").style.display = 'none';
+
+        document.querySelector("#content-5").style.display = 'block';
+        document.querySelector("#point-line-5").style.display = 'block';
+
+      }
+    }
+
+    // Navbar
+    let navCollapse = false
+    window.onresize=function()
+    {
+        if(window.innerWidth <= 1023) {
+          document.querySelector("#navbar").classList.add("hidden");
+        }
+        else {
+          document.querySelector("#navbar").classList.remove("hidden");
+        }
+    }
+    function toggle() {
+      if(!navCollapse) {
+        navCollapse = true
+        document.querySelector("#navbar").classList.remove("hidden");
+      }
+      else {
+        navCollapse = false
+        document.querySelector("#navbar").classList.add("hidden");
+      }
+    }
+  </script>
 </body>
 </html>
